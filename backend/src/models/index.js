@@ -1,0 +1,14 @@
+const role = require('./role');
+const user = require('./user');
+const student_profile = require('./student_profile');
+const studen_master = require('./student_master');
+const professor_profile = require('./professor_profile');
+const sequelize = require('./sequelize');
+user.belongsTo(role, { foreignKey: 'role_id' });
+role.hasMany(user, { foreignKey: 'role_id' });
+student_profile.belongsTo(user, { foreignKey: 'user_id' });
+user.hasOne(student_profile, { foreignKey: 'user_id' });
+student_profile.belongsTo(student_master, { foreignKey: 'student_master_id' });
+student_master.hasOne(student_profile, { foreignKey: 'student_master_id' });
+professor_profile.belongsTo(user, { foreignKey: 'user_id' });
+user.hasOne(professor_profile, { foreignKey: 'user_id' });
