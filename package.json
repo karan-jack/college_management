@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dependencies": {
     "mysql2": "^3.22.5",
     "sequelize": "^6.37.8"
@@ -7,6 +8,8 @@
   "devDependencies": {
     "sequelize-cli": "^6.6.5"
 =======
+=======
+>>>>>>> 255a671161b14d8d694fe2a9f61da804cc66aeeb
   "name": "backend",
   "version": "1.0.0",
   "description": "",
@@ -25,10 +28,17 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
+<<<<<<< HEAD
+=======
+    "module": "^2.0.0",
+>>>>>>> 255a671161b14d8d694fe2a9f61da804cc66aeeb
     "multer": "^2.2.0",
     "mysql2": "^3.22.5",
     "sequelize": "^6.37.8",
     "sqlite3": "^6.0.1"
+<<<<<<< HEAD
 >>>>>>> 9a669a3a219d2de54b4b396b236f96182d94b62d
+=======
+>>>>>>> 255a671161b14d8d694fe2a9f61da804cc66aeeb
   }
 }
